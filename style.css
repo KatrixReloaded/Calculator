@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: rgb(101, 103, 121);
+    --calc-color: rgb(65,66,78);
+    --text-color: white;
+    --boxshadow-color-a: rgba(85, 85, 85, 0.1);
+    --boxshadow-color-b: rgba(0, 0, 0, 0.2);
+}
+
+.dark-theme {
+    --background-color: #a1a1a1;
+    --calc-color: #bcbcbc;
+    --text-color: black;
+    --boxshadow-color-a: rgba(170, 170, 170, 0.1);
+    --boxshadow-color-b: rgba(255, 255, 255, 0.2);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.8s, color 0.8s;
+}
+
+.calculator {
+    background: var(--calc-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -5px -5px 15px var(--boxshadow-color-a), 5px 5px 15px var(--boxshadow-color-b);
+    background: transparent;
+    font-size: 20px;
+    color: var(--text-color);
+    cursor: pointer;
+    margin: 10px;
+}
+
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    box-shadow: none;
+}
+
+#equalto {
+    width: 145px;
+}
+
+form input .operator {
+    color: #000;
+}
+
+#toggle-btn {
+    border: 0;
+    outline: 0;
+    width: 315px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -5px -5px 15px var(--boxshadow-color-a), 5px 5px 15px var(--boxshadow-color-b);
+    background: transparent;
+    font-size: 20px;
+    color: var(--text-color);
+    cursor: pointer;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn {
+    transition: 0.8s;
+}
